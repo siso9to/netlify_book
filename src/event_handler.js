@@ -8,7 +8,7 @@ exports.handler = async function (event, context, callback) {
   if (slackEvent && slackEvent.type === 'channel_created') {
     const web = new WebClient(process.env.SLACK_TOKEN)
     await web.chat.postMessage({
-      channel: 'slack_test',
+      channel: 'netlify_test',
       text: `チャンネルが追加されました :<#${slackEvent.channel.id}>`
     })
   }
