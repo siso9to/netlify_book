@@ -1,7 +1,7 @@
 exports.handler = function (event, context, callback) {
   const response = {
     "text": "オススメの泣けるアニメ",
-    "attachements": [
+    "attachments": [
       {
         "text": "CLANNAD AFTER STORY"
       },
